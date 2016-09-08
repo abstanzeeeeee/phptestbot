@@ -97,20 +97,19 @@ makereq('ForwardMessage',[
 //===========
 
 
- if($textmessage == '/start')
-{
+if($textmessage == '/start'){
 var_dump(makereq('sendMessage',[
         'chat_id'=>$update->message->chat->id,
         'text'=>"welcome _#$name_ \n join to channel and support team max👇👇",
-	'parse_mode'=>'MarkDown',
+  'parse_mode'=>'MarkDown',
         'reply_markup'=>json_encode([
             'inline_keyboard'=>[
                 [
                     ['text'=>"Join MaxTeam Channel 👑",'url'=>"https://telegram.me/MaXTeamCh"]
-                ]
-                [
-                    ['text'=>"Join to support 👑",'url'=>"https://telegram.me/joinchat/DO8bMkBRuWIn7f1d5WBYWA"]
-                ] 
+       ],
+        [      
+                [['text'=>"Join to support 👑",'url'=>"https://telegram.me/joinchat/"]] 
+    ]
             ]
         ])
     ]));
