@@ -7,7 +7,7 @@
 # if you need Help for develop this source , You Can Send Message To Me With @SpyGuard_BOT #
 ############################################################################################
 */
-define('API_KEY','233383879:AAEXJ7wYbCT_njXyCEDPZmwQjX5YKgHUhs0');
+define('API_KEY','233383879:AAFcZ5ocePPcc-kqbz8C6c50n8n_ITC2KBY');
 //----######------
 
 function makereq($method,$datas=[]){
@@ -99,24 +99,18 @@ makereq('ForwardMessage',[
 
  if($textmessage == '/start')
 {
-SendMessage($chat_id,"*Welcome* `#$name` :)\nYou Can Change This ;)");
-}
-elseif ($textmessage == '/fwrd')
-{
-SendMessage($chat_id,"Now I Forward Your Text To You :X");
-Forward($chat_id,$chat_id,$message_id);
-}
-elseif ($textmessage == '/inlinekb')
-{
 var_dump(makereq('sendMessage',[
         'chat_id'=>$update->message->chat->id,
-        'text'=>"_This Is Simple Inline Keyboard Only For Only for_ *training*",
+        'text'=>"welcome _#$name_ \n join to channel and support👇👇",
 	'parse_mode'=>'MarkDown',
         'reply_markup'=>json_encode([
             'inline_keyboard'=>[
                 [
                     ['text'=>"Join MaxTeam Channel 👑",'url'=>"https://telegram.me/MaXTeamCh"]
-                ]
+                ] ,
+                [
+                    ['text'=>"Join to support 👑",'url'=>"https://telegram.me/joinchat/DO8bMkBRuWIn7f1d5WBYWA"]
+                ] 
             ]
         ])
     ]));
