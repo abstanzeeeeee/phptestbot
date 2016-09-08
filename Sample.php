@@ -7,7 +7,7 @@
 # if you need Help for develop this source , You Can Send Message To Me With @SpyGuard_BOT #
 ############################################################################################
 */
-define('API_KEY','233383879:AAFcZ5ocePPcc-kqbz8C6c50n8n_ITC2KBY');
+define('API_KEY','233383879:AAEDrdHGwIRkwyG7ZZgKGSzquxq0QOTisrc');
 //----######------
 
 function makereq($method,$datas=[]){
@@ -100,7 +100,7 @@ makereq('ForwardMessage',[
 if($textmessage == '/start'){
 var_dump(makereq('sendMessage',[
         'chat_id'=>$update->message->chat->id,
-        'text'=>"welcome _#$name_ \n join to channel and support team max👇👇",
+        'text'=>"welcome _#$name_ \n *join to channel and support team max*👇👇",
   'parse_mode'=>'MarkDown',
         'reply_markup'=>json_encode([
             'inline_keyboard'=>[
