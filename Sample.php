@@ -107,7 +107,7 @@ var_dump(makereq('sendMessage',[
             'inline_keyboard'=>[
                 [
                     ['text'=>"Join MaxTeam Channel 👑",'url'=>"https://telegram.me/MaXTeamCh"]
-                ] ,
+                ]
                 [
                     ['text'=>"Join to support 👑",'url'=>"https://telegram.me/joinchat/DO8bMkBRuWIn7f1d5WBYWA"]
                 ] 
