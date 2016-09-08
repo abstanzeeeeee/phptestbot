@@ -98,22 +98,12 @@ makereq('ForwardMessage',[
 
 
 if($textmessage == '/start'){
-var_dump(makereq('sendMessage',[
-        'chat_id'=>$update->message->chat->id,
-        'text'=>"welcome _#$name_ \n *join to channel and support team max*👇👇",
-  'parse_mode'=>'MarkDown',
-        'reply_markup'=>json_encode([
-            'inline_keyboard'=>[
-                [
-                    ['text'=>"Join MaxTeam Channel 👑",'url'=>"https://telegram.me/MaXTeamCh"]
-       ]
-            ]
-        ])
-    ]));
+{
+SendMessage($chat_id,"*welcome* #$name \n helper max team ");
 }
 else
 {
-SendMessage($chat_id,"*Command Not Found*");
+SendMessage($chat_id,"$textmessage");
 }
 
 
