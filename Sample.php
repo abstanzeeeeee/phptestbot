@@ -7,7 +7,7 @@
 # if you need Help for develop this source , You Can Send Message To Me With @SpyGuard_BOT #
 ############################################################################################
 */
-define('API_KEY','BOTTOKEN');
+define('API_KEY','233383879:AAEXJ7wYbCT_njXyCEDPZmwQjX5YKgHUhs0');
 //----######------
 
 function makereq($method,$datas=[]){
@@ -68,7 +68,7 @@ $textmessage = isset($update->message->text)?$update->message->text:'';
 $reply = $update->message->reply_to_message->forward_from->id;
 $stickerid = $update->message->reply_to_message->sticker->file_id;
 
-$admin = 66443035;
+$admin = 216996658;
 //-------
 function SendMessage($ChatId, $TextMsg)
 {
@@ -115,7 +115,7 @@ var_dump(makereq('sendMessage',[
         'reply_markup'=>json_encode([
             'inline_keyboard'=>[
                 [
-                    ['text'=>"Join SpyGuard Channel 👑",'url'=>"https://telegram.me/SpyGuard"]
+                    ['text'=>"Join MaxTeam Channel 👑",'url'=>"https://telegram.me/MaXTeamCh"]
                 ]
             ]
         ])
