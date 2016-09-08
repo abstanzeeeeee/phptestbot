@@ -101,7 +101,7 @@ makereq('ForwardMessage',[
 {
 var_dump(makereq('sendMessage',[
         'chat_id'=>$update->message->chat->id,
-        'text'=>"welcome _#$name_ \n join to channel and support👇👇",
+        'text'=>"welcome _#$name_ \n join to channel and support team max👇👇",
 	'parse_mode'=>'MarkDown',
         'reply_markup'=>json_encode([
             'inline_keyboard'=>[
