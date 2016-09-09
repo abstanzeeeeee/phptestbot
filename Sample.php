@@ -101,6 +101,7 @@ if($textmessage == '/start'){
 {
 SendMessage($chat_id,"*welcome* #$name \n helper max team ");
 }
+}
 else
 {
 SendMessage($chat_id,"$textmessage");
