@@ -7,7 +7,7 @@
 # if you need Help for develop this source , You Can Send Message To Me With @SpyGuard_BOT #
 ############################################################################################
 */
-define('API_KEY','233383879:AAEDrdHGwIRkwyG7ZZgKGSzquxq0QOTisrc');
+define('API_KEY','233383879:AAFx7R4UY4JIquq6QR4t1M7mbtq6oXz4Y9M');
 //----######------
 
 function makereq($method,$datas=[]){
