@@ -98,9 +98,18 @@ makereq('ForwardMessage',[
 
 
 if($textmessage == '/start'){
-{
-SendMessage($chat_id,"*welcome* #$name \n helper max team ");
-}
+var_dump(makereq('sendMessage',[
+        'chat_id'=>$update->message->chat->id,
+        'text'=>"Test",
+  'parse_mode'=>'MarkDown',
+        'reply_markup'=>json_encode([
+            'keyboard'=>[
+                [
+                    ['text'=>"Join MaxTeam Channel 👑",'url'=>"https://telegram.me/MaXTeamCh"]
+                ]
+            ]
+        ])
+    ]));
 }
 else
 {
